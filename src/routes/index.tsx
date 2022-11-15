@@ -1,4 +1,4 @@
-import { createResource, For } from 'solid-js'
+import { For } from 'solid-js'
 import { A, createRouteData, useRouteData } from 'solid-start'
 
 type Meta = {
