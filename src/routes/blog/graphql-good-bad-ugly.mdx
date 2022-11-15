@@ -1,0 +1,27 @@
+import { ArticleHead, Button } from '../../components'
+export const title = 'GraphQL: The Good, The Bad, and The Ugly'
+export const date = 'November 21, 2024'
+export const description = 'Learn about GraphQL and what makes it a great choice.'
+export const thumbnailUrl = '/graphql-thumbnail.png'
+
+<ArticleHead title={title} date={date} description={description} thumbnailUrl={thumbnailUrl} />
+
+<div>
+  This is a blog post about <strong>GraphQL</strong>. <br />
+  We'll learn about GraphQL and how to use it in applications.
+</div>
+
+<br />
+
+### This is a Markdown sub-heading
+
+We just used a `###` subheading in our blog post.
+
+```
+  // this is a code block
+  const doSomething = () => {
+    return console.log('hey')
+  }
+```
+
+<div>Here, I'm using a component inside my MarkDown file: {<Button text={'Click me'} />}</div>
