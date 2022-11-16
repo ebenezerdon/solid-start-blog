@@ -1,5 +1,6 @@
 import { For } from 'solid-js'
 import { A, createRouteData, useRouteData } from 'solid-start'
+import styles from './Home.module.css'
 
 type Meta = {
   title: string
@@ -28,14 +29,24 @@ const Home = () => {
 
   return (
     <div>
-      <h2>index</h2>
-      <For each={posts()}>
-        {(post) => (
-          <div>
-            <A href={`/blog/${post.slug}`}>{post.title}</A>
-          </div>
-        )}
-      </For>
+      <h1>My SolidStart Blog</h1>
+      <section class={styles.articleList}>
+        <For each={posts()}>
+          {(post) => (
+            <A class={styles.item} href={`/blog/${post.slug}`}>
+              <div class={styles.thumbnail}>
+                <img src={post.thumbnailUrl} alt="thumbnail" loading="lazy" />
+              </div>
+
+              <div>
+                <h2 class={styles.title}>{post.title}</h2>
+                <p class={styles.description}>{post.description}</p>
+                <p class={styles.date}>{post.date}</p>
+              </div>
+            </A>
+          )}
+        </For>
+      </section>
     </div>
   )
 }
