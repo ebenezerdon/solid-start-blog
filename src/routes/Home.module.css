@@ -1,0 +1,56 @@
+.articleList {
+  display: flex;
+  height: fit-content;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.item {
+  background-color: brown;
+  border-radius: 0.5em;
+  background-color: #fff;
+  padding: 1em;
+  width: 20em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 0.5em #27272733;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 0.96em;
+  font-weight: 300;
+}
+
+.date {
+  margin: unset;
+  font-size: 0.9em;
+  color: #222222;
+}
+
+.thumbnail {
+  transition: all 0.3s ease-in-out;
+}
+
+.thumbnail img {
+  border-radius: 0.2em;
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+}
