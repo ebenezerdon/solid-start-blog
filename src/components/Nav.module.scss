@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+  justify-content: center;
+
+  a {
+    font-size: 1.3em;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+}
