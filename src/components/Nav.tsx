@@ -3,7 +3,7 @@ import styles from './Nav.module.scss'
 
 function Nav() {
   return (
-    <nav>
+    <nav class={styles.nav}>
       <A href="/">HOME</A>
       <A href="/about">ABOUT</A>
     </nav>
