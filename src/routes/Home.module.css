@@ -27,6 +27,7 @@
 .title {
   font-size: 1.2em;
   font-weight: 400;
+  color: #335d92;
 }
 
 .title:hover {
@@ -34,8 +35,8 @@
 }
 
 .description {
-  font-size: 0.96em;
-  font-weight: 300;
+  font-size: 1em;
+  color: #000;
 }
 
 .date {
